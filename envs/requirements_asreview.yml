@@ -30,12 +30,12 @@ miniconda:
   # After conda-packages pip-packages can still be installed
   # so install pip ...
   - pip
-   - pip:
-     - asreview[all]
-     - asreview-insights
-     - asreview-datatools
-     - asreview-wordcloud
-     - asreview-makita
+  - pip:
+    - asreview[all]
+    - asreview-insights
+    - asreview-datatools
+    - asreview-wordcloud
+    - asreview-makita
   prefix: /etc/miniconda/envs
 
     
