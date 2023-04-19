@@ -13,6 +13,8 @@ miniconda:
   channels:
   - pytorch
   - nvidia
+  - conda-forge
+  channel_priority: true
   dependencies:
   - python=3.9.10
   - pytorch==1.13.1
