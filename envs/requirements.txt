@@ -20,6 +20,7 @@ miniconda:
   - torchvision==0.14.1
   - torchaudio==0.13.1
   - pytorch-cuda=11.7
+  - pandas
   - ipykernel
   - pip
   - pip:
