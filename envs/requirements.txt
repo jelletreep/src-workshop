@@ -11,7 +11,6 @@ apt:
 miniconda:
   name: whisper
   channels:
-  - conda-forge
   - pytorch
   - nvidia
   dependencies:
