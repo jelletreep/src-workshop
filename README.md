@@ -105,18 +105,15 @@ The playbook should do the following
 
 1. Install git when it is not yet present (you could perform a separate check of the installed packages using [package_facts](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/package_facts_module.html) and then add a conditional task, but there is also a short-cut using the `state` in the [apt module](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html#ansible-collections-ansible-builtin-apt-module))
 3. Clone a public GitHub repository. The creator of the workspace that uses this plugin should be able to specify the repository url during the creation of the workspace. Clone the repository to `/data/volume_2`
-Hint: it is possible to use 'parameters' in your ansible script. In the next step, you need to define the parameter in the Research cloud plugin as well so that the user can define the value when he creates a workspace. [More info](https://servicedesk.surf.nl/wiki/display/WIKI/Using+parameters)
+Hint: it is possible to use 'parameters' in your ansible script. In the next step, you need to define the parameter in the Research cloud component as well so that the user can define the value when he creates a workspace. [More info](https://servicedesk.surf.nl/wiki/display/WIKI/Using+parameters)
 
-### 8. Create a plugin 
-Now [create the plugin](https://servicedesk.surf.nl/wiki/display/WIKI/Create+a+plugin) in Research Cloud. Make sure to add the parameter that you used in the ansible script.
+### 8. Create a component 
+Now [create a component](https://servicedesk.surf.nl/wiki/display/WIKI/Create+a+component) in Research Cloud. Make sure to add the parameter that you used in the ansible script.
 
 ### 9. Create a new application
-Now [create a new application](https://servicedesk.surf.nl/wiki/display/WIKI/Create+an+application). You can use an existing application as a template (e.g. use Ubuntu 20.04 sudo enabled), make sure to add `SRC External plugin` first and then simply add your plugin.
+Now [create a new Catalogue Item](https://servicedesk.surf.nl/wiki/display/WIKI/Create+a+catalog+item). You can use an existing application as a template (e.g. use Ubuntu 20.04 sudo enabled), make sure to add `SRC External plugin` first and then simply add your plugin.
 
-### 10. Create a new application offering
-Now [create a new application offering](https://servicedesk.surf.nl/wiki/display/WIKI/Create+an+application+offering). You can use an existing application offering as a template, but make sure to select the application that you just created.
-
-### 11. Final step
+### 10. Final step
 Now go back to the dashboard and create a new workspace with the application that you just created to see if it is working!
 
 Afterwards, feel free to experiment a bit more, but do delete all the workspaces and storage units when you are done!
